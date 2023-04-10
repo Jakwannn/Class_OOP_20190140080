@@ -17,9 +17,34 @@ private:
     string kode;
     string namaM;
     int sks;
+public:
+    void input() {
+        cout << "Masukkan Kode Matakuliah : ";
+        cin >> kode;
+        cout << "Masukkan Nama Matakuliah : ";
+        cin >> namaM;
+        cout << "Jumlah SKS : ";
+        cout << "Jumlah SKS : ";
+        cin >> sks;
+    }
+    void tampil() {
+        cout << "Kode Matakuliah : " << kode;
+        cout << "Nama Matakuliah : " << namaM;
+        cout << "SKS : " << sks;
+    }
+};
 
 int main()
 {
-    std::cout << "Hello World!\n";
-}
+    Mahasiswa mhs1;
+    Matakuliah mk;
 
+    cout << "Masukkan NIM : ";
+    cin >> mhs1.nim;
+    cout << "Masukkan Nama : ";
+    cin >> mhs1.nama;
+    mhs1.cetak();
+
+    mk.input();
+    mk.tampil();
+}
